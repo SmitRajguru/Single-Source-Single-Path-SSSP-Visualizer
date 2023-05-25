@@ -25,9 +25,9 @@ class Astar:
     def displayGrid(self, listcolorpairings=None):
         if listcolorpairings == None:
             listcolorpairings = [
+                ([self.current], "yellow"),
                 (self.openSet, "lightgreen"),
                 (self.closedSet, "lightcoral"),
-                ([self.current], "yellow"),
                 ([self.start], "blue"),
                 ([self.end], "green"),
             ]
